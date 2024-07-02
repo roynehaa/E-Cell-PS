@@ -1,0 +1,295 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e0fec8;
+}
+
+body::-webkit-scrollbar {
+  width: 0;
+}
+
+nav {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  display: flex;
+  position: relative;
+  background-color: #006c48;
+}
+
+h1 {
+  width: 86%;
+  font-size: 2rem;
+  font-weight: 600;
+  color: white;
+  flex-grow: 3;
+}
+
+.log-in,
+.sign-in {
+  width: 7%;
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0.25rem 0.5rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.log-in {
+  color: #f2f2f2;
+  background-color: #104722;
+  cursor: pointer;
+}
+
+.sign-in {
+  padding: 0.5rem 0;
+  color: #006c48;
+  background-color: #c5e5d0;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.circle {
+  padding: 0.5rem;
+  width: auto;
+  border-radius: 50%;
+}
+
+.container {
+  width: 100%;
+  height: fit-content;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container img {
+  width: 100%;
+  z-index: -1;
+}
+
+.container p {
+  width: 40%;
+  color: white;
+  font-size: 2.65rem;
+  position: absolute;
+  left: 10%;
+  text-align: center;
+}
+
+.cards-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.card {
+  width: 100%;
+  height: 60vh;
+  padding: 0 5%;
+  background-color: whitesmoke;
+  color: #006c48;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card:nth-child(even) {
+  background-color: #e0fec8;
+}
+
+.content {
+  width: 80%;
+  padding: 10%;
+  text-align: center;
+}
+
+.content h3 {
+  padding: 1rem;
+  font-size: 2.5rem;
+}
+
+.content p {
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+.content button {
+  padding: 0.75rem;
+  color: white;
+  background-color: #006c48;
+  border-radius: 2.5rem;
+  font-size: 1.75rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.card img {
+  padding: 20px 10px 0 10px;
+  width: 60%;
+  height: 80%;
+}
+
+.road {
+  position: absolute;
+}
+
+.cards-container-dashboard {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.card-dash {
+  width: 100%;
+  height: 50%;
+  padding: 2.5% 2.5%;
+  color: #006c48;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bold {
+  font-weight: 500;
+}
+
+.card-dash img {
+  width: 50%;
+  height: 100%;
+}
+
+.shop-container {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3%;
+  row-gap: 3%;
+  padding: 3% 2.5%;
+}
+
+.item {
+  width: 21.5%;
+  height: fit-content;
+  margin-bottom: 1.5rem;
+  padding: 1.25rem;
+  color: whitesmoke;
+  background-color: #006c48;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 1rem;
+}
+
+.item div,
+.item h3,
+.item p {
+  width: 100%;
+  text-align: left;
+}
+
+.item h3 {
+  font-size: 1.5rem;
+}
+
+.item div {
+  padding: 5px 0;
+  margin-bottom: 5px;
+}
+
+.item img {
+  width: 100%;
+  height: 50%;
+  border-radius: 1rem;
+  margin-bottom: 5px;
+}
+
+.item button {
+  padding: 0.75rem 1.5rem;
+  color: white;
+  background-color: #006c48;
+  border-radius: 2rem;
+  position: absolute;
+  top: 7%;
+  right: 0;
+  border: none;
+  cursor: pointer;
+  outline: 1px solid white;
+}
+
+#rel {
+  position: relative;
+}
+
+.map-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 2.5%;
+}
+
+.select-container {
+  width: 45%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.select-container select {
+  height: 10%;
+  width: 80%;
+  padding: 1rem;
+}
+
+.select-container button {
+  height: 8%;
+  width: 30%;
+  padding: 1rem;
+  border-radius: 1.25rem;
+  border: none;
+  background-color: #006c48;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.img {
+  width: 55%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img img {
+  width: 90%;
+  height: 90%;
+  border: 2px solid #006c48;
+}
